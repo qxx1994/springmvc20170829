@@ -39,12 +39,12 @@ public class ViewController {
         Map<String,Object> map = new HashMap();
         System.out.println("你已通过springMVC进入controller方法。。。。");
         logger.info("你已通过springMVC进入controller方法。。。。");
-        User loginuser = userService.findByUsernameAndPwd(user.getUsername(),user.getPassword());
-        if(loginuser != null){
-            map.put("result","success");
-        }else {
-            map.put("result","fail");
-        }
+//        User loginuser = userService.findByUsernameAndPwd(user.getUsername(),user.getPassword());
+//        if(loginuser != null){
+//            map.put("result","success");
+//        }else {
+//            map.put("result","fail");
+//        }
         return map;
     }
 
